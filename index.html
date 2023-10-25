@@ -12,7 +12,7 @@
 
         <body>
 
-                 <h1>Calculadora de Paula Mena Gutiérrez</h1>
+                 <h1>Calculadora de Paula Mena Gutiérrez </h1>
 
                  Number:
 
@@ -25,6 +25,8 @@
                          <button onclick="square()"> x^2 </button>
 
                          <button onclick="cube()"> x^3 </button>
+
+                         <button onclick="sine()"> sin </button>
 
                          <button onclick="power_4()"> x^4</button>
 
@@ -40,7 +42,6 @@
 
                          }
 
-
                          function square() {
 
                                   var num = document.getElementById("n1");
@@ -54,13 +55,20 @@
                                   var num = document.getElementById("n1");
 
                                   num.value = 1/num.value;
+                         }
+
+                         function sine() {
+
+                                  var num = document.getElementById("n1");
+
+                                  num.value = Math.sin(num.value);
+                         }
 
                          function power_4() {
 
                                   var num = document.getElementById("n1");
 
                                   num.value = Math.pow(num.value, 4);
-
 
                          }
 
